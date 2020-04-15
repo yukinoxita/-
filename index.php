@@ -1,3 +1,4 @@
+<?php?>
 <html>
 <head>
 <title>某些漏洞的练习场</title>
