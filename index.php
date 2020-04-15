@@ -31,10 +31,10 @@ a
 <div id="xss">
 <h1>xss</h1>
 <ul id=xssul>
-<li><a href="2.php">普通的反射型xss</a></li>
-<li><a href="3.php">普通的储存型xss</a></li>
+<li><a href="xss/2.php">普通的反射型xss</a></li>
+<li><a href="xss/3.php">普通的储存型xss</a></li>
 <!--li><a></a></li-->
-<li><a href="1.php">$_SERVER['PHP_SELF']可能引发的漏洞</a></li>
+<li><a href="xss/1.php">$_SERVER['PHP_SELF']可能引发的漏洞</a></li>
 </ul>
 </div>
 </div>

@@ -2,7 +2,7 @@
 $ServerName = 'localhost';
 $UserName   = 'root';
 $Password   = '123456';
-include "sql_connect.php";
+include "../sql_connect.php";
 $conn->select_db('luodong');
 $conn->query("SET NAMES UTF8");
 $str = $_GET['strings'];
