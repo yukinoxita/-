@@ -1,3 +1,4 @@
+<?php?>
 <html>
 <head>
 <title>xss</title>
