@@ -22,6 +22,11 @@ a
 {
     text-align:left;
 }
+#title
+{
+    margin-bottom:0px;    
+    margin-top:0px;    
+}
 </style>
 </head>
 <body>
@@ -29,7 +34,7 @@ a
 <p>本人在学习过程中发现的一些web的漏洞，故总结于此</p>
 <div id="all">
 <div id="xss">
-<h1>xss</h1>
+<a href=xss/index.php><h1 id="title">xss</h1></a>
 <ul id=xssul>
 <li><a href="xss/2.php">普通的反射型xss</a></li>
 <li><a href="xss/3.php">普通的储存型xss</a></li>
