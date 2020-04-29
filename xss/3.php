@@ -1,21 +1,18 @@
 <?php
-$ServerName = 'localhost';
-$UserName   = 'root';
-$Password   = '123456';
 include "../sql_connect.php";
-$conn->select_db('luodong');
+$conn->select_db('loudong');
 $conn->query("SET NAMES UTF8");
 $str = $_GET['strings'];
 if($str == '')
     echo "尚未提交评论";
 else if($str == '0')
 {
-    $conn->query('delete from massage');
+    $conn->query('delete from comment');
     echo "<script>alert('删除成功')</script>";
 }
 else
 {
-    $sql = "insert into massage value('$str')";   
+    $sql = "insert into comment value('$str')";   
     if($conn->query($sql) === TRUE)
     {
         echo "ok";
@@ -50,7 +47,7 @@ form
 </script>
 <div id="feedback">
 <?php
-$sql = 'select text from massage';
+$sql = 'select text from comment';
 $result = $conn->query($sql);
 if($result->num_rows != 0)
 {

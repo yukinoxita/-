@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.28, for Linux (x86_64)
 --
--- Host: localhost    Database: luodong
+-- Host: localhost    Database: loudong
 -- ------------------------------------------------------
 -- Server version	5.7.28
 
@@ -16,24 +16,47 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `massage`
+-- Table structure for table `comment`
 --
 
-DROP TABLE IF EXISTS `massage`;
+DROP TABLE IF EXISTS `comment`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `massage` (
+CREATE TABLE `comment` (
   `text` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `massage`
+-- Dumping data for table `comment`
 --
 
-LOCK TABLES `massage` WRITE;
-/*!40000 ALTER TABLE `massage` DISABLE KEYS */;
-/*!40000 ALTER TABLE `massage` ENABLE KEYS */;
+LOCK TABLES `comment` WRITE;
+/*!40000 ALTER TABLE `comment` DISABLE KEYS */;
+/*!40000 ALTER TABLE `comment` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `csrf`
+--
+
+DROP TABLE IF EXISTS `csrf`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `csrf` (
+  `name` varchar(255) DEFAULT NULL,
+  `passwd` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `csrf`
+--
+
+LOCK TABLES `csrf` WRITE;
+/*!40000 ALTER TABLE `csrf` DISABLE KEYS */;
+INSERT INTO `csrf` VALUES ('admin','admin');
+/*!40000 ALTER TABLE `csrf` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -45,4 +68,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-04-15 12:31:10
+-- Dump completed on 2020-04-29 22:49:12

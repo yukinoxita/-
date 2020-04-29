@@ -8,6 +8,7 @@
 -----------------  
 xss  
 sql inject  
+csrf (4.29 update)
 To be continue...  
 -----------------  
 

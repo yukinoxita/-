@@ -1,4 +1,6 @@
-<?php?>
+<?php
+setcookie("user", "tester", time()+3600);
+?>
 <html>
 <head>
 <title>某些漏洞的练习场</title>
@@ -7,7 +9,7 @@ h1
 {
     text-align:center;
 }
-#xss
+#xss,#csrf
 {
     border:1px solid grey;
     text-align:center;
@@ -41,6 +43,14 @@ a
 <li><a href="xss/3.php">普通的储存型xss</a></li>
 <!--li><a></a></li-->
 <li><a href="xss/1.php">$_SERVER['PHP_SELF']可能引发的漏洞</a></li>
+</ul>
+</div>
+<div id="csrf">
+<a href=csrf/index.html><h1 id="title">csrf</h1></a>
+<ul id=xssul>
+<li><a href="csrf/1.php">get类型</a></li>
+<li><a href="csrf/2.php">post类型</a></li>
+<!--li><a></a></li-->
 </ul>
 </div>
 </div>
